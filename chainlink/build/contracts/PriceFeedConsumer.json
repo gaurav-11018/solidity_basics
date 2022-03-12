@@ -1,0 +1,2145 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "AggregatorAddress",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "getLatestPrice",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "17": "contracts/PriceFeedConsumer.sol",
+    "4": "C:/Users/Gaurav U/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.2.2/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/PriceFeedConsumer.sol",
+    "exportedSymbols": {
+      "AggregatorV3Interface": [
+        939
+      ],
+      "PriceFeedConsumer": [
+        259
+      ]
+    },
+    "id": 260,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 218,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:17"
+      },
+      {
+        "absolutePath": "C:/Users/Gaurav U/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.2.2/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol",
+        "file": "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol",
+        "id": 219,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 260,
+        "sourceUnit": 940,
+        "src": "58:76:17",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "PriceFeedConsumer",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 259,
+        "linearizedBaseContracts": [
+          259
+        ],
+        "name": "PriceFeedConsumer",
+        "nameLocation": "145:17:17",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 222,
+            "mutability": "mutable",
+            "name": "priceFeed",
+            "nameLocation": "201:9:17",
+            "nodeType": "VariableDeclaration",
+            "scope": 259,
+            "src": "170:40:17",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_AggregatorV3Interface_$939",
+              "typeString": "contract AggregatorV3Interface"
+            },
+            "typeName": {
+              "id": 221,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 220,
+                "name": "AggregatorV3Interface",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 939,
+                "src": "170:21:17"
+              },
+              "referencedDeclaration": 939,
+              "src": "170:21:17",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_AggregatorV3Interface_$939",
+                "typeString": "contract AggregatorV3Interface"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 234,
+              "nodeType": "Block",
+              "src": "506:69:17",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 232,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 228,
+                      "name": "priceFeed",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 222,
+                      "src": "516:9:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_AggregatorV3Interface_$939",
+                        "typeString": "contract AggregatorV3Interface"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 230,
+                          "name": "AggregatorAddress",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 225,
+                          "src": "550:17:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 229,
+                        "name": "AggregatorV3Interface",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 939,
+                        "src": "528:21:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_AggregatorV3Interface_$939_$",
+                          "typeString": "type(contract AggregatorV3Interface)"
+                        }
+                      },
+                      "id": 231,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "528:40:17",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_AggregatorV3Interface_$939",
+                        "typeString": "contract AggregatorV3Interface"
+                      }
+                    },
+                    "src": "516:52:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_AggregatorV3Interface_$939",
+                      "typeString": "contract AggregatorV3Interface"
+                    }
+                  },
+                  "id": 233,
+                  "nodeType": "ExpressionStatement",
+                  "src": "516:52:17"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 223,
+              "nodeType": "StructuredDocumentation",
+              "src": "341:121:17",
+              "text": " Network: Mainnet\n Aggregator: ETH/USD\n Address: 0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419"
+            },
+            "id": 235,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 226,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 225,
+                  "mutability": "mutable",
+                  "name": "AggregatorAddress",
+                  "nameLocation": "487:17:17",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 235,
+                  "src": "479:25:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 224,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "479:7:17",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "478:27:17"
+            },
+            "returnParameters": {
+              "id": 227,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "506:0:17"
+            },
+            "scope": 259,
+            "src": "467:108:17",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 257,
+              "nodeType": "Block",
+              "src": "681:223:17",
+              "statements": [
+                {
+                  "assignments": [
+                    242,
+                    244,
+                    246,
+                    248,
+                    250
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 242,
+                      "mutability": "mutable",
+                      "name": "roundID",
+                      "nameLocation": "712:7:17",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 257,
+                      "src": "705:14:17",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint80",
+                        "typeString": "uint80"
+                      },
+                      "typeName": {
+                        "id": 241,
+                        "name": "uint80",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "705:6:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint80",
+                          "typeString": "uint80"
+                        }
+                      },
+                      "visibility": "internal"
+                    },
+                    {
+                      "constant": false,
+                      "id": 244,
+                      "mutability": "mutable",
+                      "name": "price",
+                      "nameLocation": "738:5:17",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 257,
+                      "src": "734:9:17",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      },
+                      "typeName": {
+                        "id": 243,
+                        "name": "int",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "734:3:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      },
+                      "visibility": "internal"
+                    },
+                    {
+                      "constant": false,
+                      "id": 246,
+                      "mutability": "mutable",
+                      "name": "startedAt",
+                      "nameLocation": "762:9:17",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 257,
+                      "src": "757:14:17",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 245,
+                        "name": "uint",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "757:4:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    },
+                    {
+                      "constant": false,
+                      "id": 248,
+                      "mutability": "mutable",
+                      "name": "timeStamp",
+                      "nameLocation": "790:9:17",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 257,
+                      "src": "785:14:17",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 247,
+                        "name": "uint",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "785:4:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    },
+                    {
+                      "constant": false,
+                      "id": 250,
+                      "mutability": "mutable",
+                      "name": "answeredInRound",
+                      "nameLocation": "820:15:17",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 257,
+                      "src": "813:22:17",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint80",
+                        "typeString": "uint80"
+                      },
+                      "typeName": {
+                        "id": 249,
+                        "name": "uint80",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "813:6:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint80",
+                          "typeString": "uint80"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 254,
+                  "initialValue": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 251,
+                        "name": "priceFeed",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 222,
+                        "src": "848:9:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_AggregatorV3Interface_$939",
+                          "typeString": "contract AggregatorV3Interface"
+                        }
+                      },
+                      "id": 252,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "latestRoundData",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 938,
+                      "src": "848:25:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_view$__$returns$_t_uint80_$_t_int256_$_t_uint256_$_t_uint256_$_t_uint80_$",
+                        "typeString": "function () view external returns (uint80,int256,uint256,uint256,uint80)"
+                      }
+                    },
+                    "id": 253,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "848:27:17",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_uint80_$_t_int256_$_t_uint256_$_t_uint256_$_t_uint80_$",
+                      "typeString": "tuple(uint80,int256,uint256,uint256,uint80)"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "691:184:17"
+                },
+                {
+                  "expression": {
+                    "id": 255,
+                    "name": "price",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 244,
+                    "src": "892:5:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "functionReturnParameters": 240,
+                  "id": 256,
+                  "nodeType": "Return",
+                  "src": "885:12:17"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 236,
+              "nodeType": "StructuredDocumentation",
+              "src": "581:43:17",
+              "text": " Returns the latest price"
+            },
+            "functionSelector": "8e15f473",
+            "id": 258,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLatestPrice",
+            "nameLocation": "638:14:17",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 237,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "652:2:17"
+            },
+            "returnParameters": {
+              "id": 240,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 239,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 258,
+                  "src": "676:3:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 238,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "676:3:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "675:5:17"
+            },
+            "scope": 259,
+            "src": "629:275:17",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 260,
+        "src": "136:770:17",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:874:17"
+  },
+  "bytecode": "608060405234801561001057600080fd5b5060405161020f38038061020f83398101604081905261002f91610054565b600080546001600160a01b0319166001600160a01b0392909216919091179055610084565b60006020828403121561006657600080fd5b81516001600160a01b038116811461007d57600080fd5b9392505050565b61017c806100936000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80638e15f47314610030575b600080fd5b61003861004a565b60405190815260200160405180910390f35b60008060008060008060008054906101000a90046001600160a01b03166001600160a01b031663feaf968c6040518163ffffffff1660e01b815260040160a060405180830381865afa1580156100a4573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906100c891906100f6565b50919998505050505050505050565b805169ffffffffffffffffffff811681146100f157600080fd5b919050565b600080600080600060a0868803121561010e57600080fd5b610117866100d7565b945060208601519350604086015192506060860151915061013a608087016100d7565b9050929550929590935056fea2646970667358221220c96a34fffe8ea7928f7435672150da526059c38d106015be3fe11dfb8453988a64736f6c634300080b0033",
+  "bytecodeSha1": "4a767194a033a6ce3f88d654cc6ebd727a1e92a3",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.11+commit.d7f03943"
+  },
+  "contractName": "PriceFeedConsumer",
+  "coverageMap": {
+    "branches": {
+      "17": {},
+      "4": {}
+    },
+    "statements": {
+      "17": {},
+      "4": {}
+    }
+  },
+  "dependencies": [
+    "smartcontractkit/chainlink-brownie-contracts@0.2.2/AggregatorV3Interface"
+  ],
+  "deployedBytecode": "608060405234801561001057600080fd5b506004361061002b5760003560e01c80638e15f47314610030575b600080fd5b61003861004a565b60405190815260200160405180910390f35b60008060008060008060008054906101000a90046001600160a01b03166001600160a01b031663feaf968c6040518163ffffffff1660e01b815260040160a060405180830381865afa1580156100a4573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906100c891906100f6565b50919998505050505050505050565b805169ffffffffffffffffffff811681146100f157600080fd5b919050565b600080600080600060a0868803121561010e57600080fd5b610117866100d7565b945060208601519350604086015192506060860151915061013a608087016100d7565b9050929550929590935056fea2646970667358221220c96a34fffe8ea7928f7435672150da526059c38d106015be3fe11dfb8453988a64736f6c634300080b0033",
+  "deployedSourceMap": "136:770:17:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;629:275;;;:::i;:::-;;;158:25:19;;;146:2;131:18;629:275:17;;;;;;;;676:3;705:14;734:9;757:14;785;813:22;848:9;;;;;;;;-1:-1:-1;;;;;848:9:17;-1:-1:-1;;;;;848:25:17;;:27;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;691:184:17;;629:275;-1:-1:-1;;;;;;;;;629:275:17:o;194:179:19:-;272:13;;325:22;314:34;;304:45;;294:73;;363:1;360;353:12;294:73;194:179;;;:::o;378:473::-;481:6;489;497;505;513;566:3;554:9;545:7;541:23;537:33;534:53;;;583:1;580;573:12;534:53;606:39;635:9;606:39;:::i;:::-;596:49;;685:2;674:9;670:18;664:25;654:35;;729:2;718:9;714:18;708:25;698:35;;773:2;762:9;758:18;752:25;742:35;;796:49;840:3;829:9;825:19;796:49;:::i;:::-;786:59;;378:473;;;;;;;;:::o",
+  "language": "Solidity",
+  "natspec": {
+    "kind": "dev",
+    "methods": {
+      "constructor": {
+        "notice": "Network: Mainnet Aggregator: ETH/USD Address: 0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419"
+      },
+      "getLatestPrice()": {
+        "notice": "Returns the latest price"
+      }
+    },
+    "version": 1
+  },
+  "offset": [
+    136,
+    906
+  ],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH2 0x2B JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x8E15F473 EQ PUSH2 0x30 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH2 0x38 PUSH2 0x4A JUMP JUMPDEST PUSH1 0x40 MLOAD SWAP1 DUP2 MSTORE PUSH1 0x20 ADD PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH1 0x0 DUP1 PUSH1 0x0 DUP1 PUSH1 0x0 DUP1 PUSH1 0x0 DUP1 SLOAD SWAP1 PUSH2 0x100 EXP SWAP1 DIV PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND PUSH4 0xFEAF968C PUSH1 0x40 MLOAD DUP2 PUSH4 0xFFFFFFFF AND PUSH1 0xE0 SHL DUP2 MSTORE PUSH1 0x4 ADD PUSH1 0xA0 PUSH1 0x40 MLOAD DUP1 DUP4 SUB DUP2 DUP7 GAS STATICCALL ISZERO DUP1 ISZERO PUSH2 0xA4 JUMPI RETURNDATASIZE PUSH1 0x0 DUP1 RETURNDATACOPY RETURNDATASIZE PUSH1 0x0 REVERT JUMPDEST POP POP POP POP PUSH1 0x40 MLOAD RETURNDATASIZE PUSH1 0x1F NOT PUSH1 0x1F DUP3 ADD AND DUP3 ADD DUP1 PUSH1 0x40 MSTORE POP DUP2 ADD SWAP1 PUSH2 0xC8 SWAP2 SWAP1 PUSH2 0xF6 JUMP JUMPDEST POP SWAP2 SWAP10 SWAP9 POP POP POP POP POP POP POP POP POP JUMP JUMPDEST DUP1 MLOAD PUSH10 0xFFFFFFFFFFFFFFFFFFFF DUP2 AND DUP2 EQ PUSH2 0xF1 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST SWAP2 SWAP1 POP JUMP JUMPDEST PUSH1 0x0 DUP1 PUSH1 0x0 DUP1 PUSH1 0x0 PUSH1 0xA0 DUP7 DUP9 SUB SLT ISZERO PUSH2 0x10E JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH2 0x117 DUP7 PUSH2 0xD7 JUMP JUMPDEST SWAP5 POP PUSH1 0x20 DUP7 ADD MLOAD SWAP4 POP PUSH1 0x40 DUP7 ADD MLOAD SWAP3 POP PUSH1 0x60 DUP7 ADD MLOAD SWAP2 POP PUSH2 0x13A PUSH1 0x80 DUP8 ADD PUSH2 0xD7 JUMP JUMPDEST SWAP1 POP SWAP3 SWAP6 POP SWAP3 SWAP6 SWAP1 SWAP4 POP JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xC9 PUSH11 0x34FFFE8EA7928F74356721 POP 0xDA MSTORE PUSH1 0x59 0xC3 DUP14 LT PUSH1 0x15 0xBE EXTCODEHASH 0xE1 SAR 0xFB DUP5 MSTORE8 SWAP9 DUP11 PUSH5 0x736F6C6343 STOP ADDMOD SIGNEXTEND STOP CALLER ",
+  "pcMap": {
+    "0": {
+      "offset": [
+        136,
+        906
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "MSTORE",
+      "path": "17"
+    },
+    "5": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "CALLVALUE",
+      "path": "17"
+    },
+    "6": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "DUP1",
+      "path": "17"
+    },
+    "7": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "ISZERO",
+      "path": "17"
+    },
+    "8": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "PUSH2",
+      "path": "17",
+      "value": "0x10"
+    },
+    "11": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "JUMPI",
+      "path": "17"
+    },
+    "12": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x0"
+    },
+    "14": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "DUP1",
+      "path": "17"
+    },
+    "15": {
+      "dev": "Cannot send ether to nonpayable function",
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "REVERT",
+      "path": "17"
+    },
+    "16": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "JUMPDEST",
+      "path": "17"
+    },
+    "17": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "POP",
+      "path": "17"
+    },
+    "18": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x4"
+    },
+    "20": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "CALLDATASIZE",
+      "path": "17"
+    },
+    "21": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "LT",
+      "path": "17"
+    },
+    "22": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "PUSH2",
+      "path": "17",
+      "value": "0x2B"
+    },
+    "25": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "JUMPI",
+      "path": "17"
+    },
+    "26": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x0"
+    },
+    "28": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "CALLDATALOAD",
+      "path": "17"
+    },
+    "29": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0xE0"
+    },
+    "31": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "SHR",
+      "path": "17"
+    },
+    "32": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "DUP1",
+      "path": "17"
+    },
+    "33": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "PUSH4",
+      "path": "17",
+      "value": "0x8E15F473"
+    },
+    "38": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "EQ",
+      "path": "17"
+    },
+    "39": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "PUSH2",
+      "path": "17",
+      "value": "0x30"
+    },
+    "42": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "JUMPI",
+      "path": "17"
+    },
+    "43": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "JUMPDEST",
+      "path": "17"
+    },
+    "44": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x0"
+    },
+    "46": {
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "DUP1",
+      "path": "17"
+    },
+    "47": {
+      "first_revert": true,
+      "fn": null,
+      "offset": [
+        136,
+        906
+      ],
+      "op": "REVERT",
+      "path": "17"
+    },
+    "48": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        629,
+        904
+      ],
+      "op": "JUMPDEST",
+      "path": "17"
+    },
+    "49": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        629,
+        904
+      ],
+      "op": "PUSH2",
+      "path": "17",
+      "value": "0x38"
+    },
+    "52": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        629,
+        904
+      ],
+      "op": "PUSH2",
+      "path": "17",
+      "value": "0x4A"
+    },
+    "55": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "jump": "i",
+      "offset": [
+        629,
+        904
+      ],
+      "op": "JUMP",
+      "path": "17"
+    },
+    "56": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        629,
+        904
+      ],
+      "op": "JUMPDEST",
+      "path": "17"
+    },
+    "57": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        629,
+        904
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x40"
+    },
+    "59": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        629,
+        904
+      ],
+      "op": "MLOAD",
+      "path": "17"
+    },
+    "60": {
+      "op": "SWAP1"
+    },
+    "61": {
+      "op": "DUP2"
+    },
+    "62": {
+      "op": "MSTORE"
+    },
+    "63": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "65": {
+      "op": "ADD"
+    },
+    "66": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        629,
+        904
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x40"
+    },
+    "68": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        629,
+        904
+      ],
+      "op": "MLOAD",
+      "path": "17"
+    },
+    "69": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        629,
+        904
+      ],
+      "op": "DUP1",
+      "path": "17"
+    },
+    "70": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        629,
+        904
+      ],
+      "op": "SWAP2",
+      "path": "17"
+    },
+    "71": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        629,
+        904
+      ],
+      "op": "SUB",
+      "path": "17"
+    },
+    "72": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        629,
+        904
+      ],
+      "op": "SWAP1",
+      "path": "17"
+    },
+    "73": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        629,
+        904
+      ],
+      "op": "RETURN",
+      "path": "17"
+    },
+    "74": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        629,
+        904
+      ],
+      "op": "JUMPDEST",
+      "path": "17"
+    },
+    "75": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        676,
+        679
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x0"
+    },
+    "77": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        705,
+        719
+      ],
+      "op": "DUP1",
+      "path": "17"
+    },
+    "78": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        734,
+        743
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x0"
+    },
+    "80": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        757,
+        771
+      ],
+      "op": "DUP1",
+      "path": "17"
+    },
+    "81": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        785,
+        799
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x0"
+    },
+    "83": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        813,
+        835
+      ],
+      "op": "DUP1",
+      "path": "17"
+    },
+    "84": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        857
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x0"
+    },
+    "86": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        857
+      ],
+      "op": "DUP1",
+      "path": "17"
+    },
+    "87": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        857
+      ],
+      "op": "SLOAD",
+      "path": "17"
+    },
+    "88": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        857
+      ],
+      "op": "SWAP1",
+      "path": "17"
+    },
+    "89": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        857
+      ],
+      "op": "PUSH2",
+      "path": "17",
+      "value": "0x100"
+    },
+    "92": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        857
+      ],
+      "op": "EXP",
+      "path": "17"
+    },
+    "93": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        857
+      ],
+      "op": "SWAP1",
+      "path": "17"
+    },
+    "94": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        857
+      ],
+      "op": "DIV",
+      "path": "17"
+    },
+    "95": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "97": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "99": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "101": {
+      "op": "SHL"
+    },
+    "102": {
+      "op": "SUB"
+    },
+    "103": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        857
+      ],
+      "op": "AND",
+      "path": "17"
+    },
+    "104": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "106": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "108": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "110": {
+      "op": "SHL"
+    },
+    "111": {
+      "op": "SUB"
+    },
+    "112": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        873
+      ],
+      "op": "AND",
+      "path": "17"
+    },
+    "113": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        873
+      ],
+      "op": "PUSH4",
+      "path": "17",
+      "value": "0xFEAF968C"
+    },
+    "118": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x40"
+    },
+    "120": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "MLOAD",
+      "path": "17"
+    },
+    "121": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "DUP2",
+      "path": "17"
+    },
+    "122": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "PUSH4",
+      "path": "17",
+      "value": "0xFFFFFFFF"
+    },
+    "127": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "AND",
+      "path": "17"
+    },
+    "128": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0xE0"
+    },
+    "130": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "SHL",
+      "path": "17"
+    },
+    "131": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "DUP2",
+      "path": "17"
+    },
+    "132": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "MSTORE",
+      "path": "17"
+    },
+    "133": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x4"
+    },
+    "135": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "ADD",
+      "path": "17"
+    },
+    "136": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0xA0"
+    },
+    "138": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x40"
+    },
+    "140": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "MLOAD",
+      "path": "17"
+    },
+    "141": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "DUP1",
+      "path": "17"
+    },
+    "142": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "DUP4",
+      "path": "17"
+    },
+    "143": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "SUB",
+      "path": "17"
+    },
+    "144": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "DUP2",
+      "path": "17"
+    },
+    "145": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "DUP7",
+      "path": "17"
+    },
+    "146": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "GAS",
+      "path": "17"
+    },
+    "147": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "STATICCALL",
+      "path": "17"
+    },
+    "148": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "ISZERO",
+      "path": "17"
+    },
+    "149": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "DUP1",
+      "path": "17"
+    },
+    "150": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "ISZERO",
+      "path": "17"
+    },
+    "151": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "PUSH2",
+      "path": "17",
+      "value": "0xA4"
+    },
+    "154": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "JUMPI",
+      "path": "17"
+    },
+    "155": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "RETURNDATASIZE",
+      "path": "17"
+    },
+    "156": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x0"
+    },
+    "158": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "DUP1",
+      "path": "17"
+    },
+    "159": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "RETURNDATACOPY",
+      "path": "17"
+    },
+    "160": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "RETURNDATASIZE",
+      "path": "17"
+    },
+    "161": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x0"
+    },
+    "163": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "REVERT",
+      "path": "17"
+    },
+    "164": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "JUMPDEST",
+      "path": "17"
+    },
+    "165": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "POP",
+      "path": "17"
+    },
+    "166": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "POP",
+      "path": "17"
+    },
+    "167": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "POP",
+      "path": "17"
+    },
+    "168": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "POP",
+      "path": "17"
+    },
+    "169": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x40"
+    },
+    "171": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "MLOAD",
+      "path": "17"
+    },
+    "172": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "RETURNDATASIZE",
+      "path": "17"
+    },
+    "173": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x1F"
+    },
+    "175": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "NOT",
+      "path": "17"
+    },
+    "176": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x1F"
+    },
+    "178": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "DUP3",
+      "path": "17"
+    },
+    "179": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "ADD",
+      "path": "17"
+    },
+    "180": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "AND",
+      "path": "17"
+    },
+    "181": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "DUP3",
+      "path": "17"
+    },
+    "182": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "ADD",
+      "path": "17"
+    },
+    "183": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "DUP1",
+      "path": "17"
+    },
+    "184": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "PUSH1",
+      "path": "17",
+      "value": "0x40"
+    },
+    "186": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "MSTORE",
+      "path": "17"
+    },
+    "187": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "POP",
+      "path": "17"
+    },
+    "188": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "DUP2",
+      "path": "17"
+    },
+    "189": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "ADD",
+      "path": "17"
+    },
+    "190": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "SWAP1",
+      "path": "17"
+    },
+    "191": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "PUSH2",
+      "path": "17",
+      "value": "0xC8"
+    },
+    "194": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "SWAP2",
+      "path": "17"
+    },
+    "195": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "SWAP1",
+      "path": "17"
+    },
+    "196": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "PUSH2",
+      "path": "17",
+      "value": "0xF6"
+    },
+    "199": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "jump": "i",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "JUMP",
+      "path": "17"
+    },
+    "200": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        848,
+        875
+      ],
+      "op": "JUMPDEST",
+      "path": "17"
+    },
+    "201": {
+      "op": "POP"
+    },
+    "202": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        691,
+        875
+      ],
+      "op": "SWAP2",
+      "path": "17"
+    },
+    "203": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        691,
+        875
+      ],
+      "op": "SWAP10",
+      "path": "17"
+    },
+    "204": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "offset": [
+        629,
+        904
+      ],
+      "op": "SWAP9",
+      "path": "17"
+    },
+    "205": {
+      "op": "POP"
+    },
+    "206": {
+      "op": "POP"
+    },
+    "207": {
+      "op": "POP"
+    },
+    "208": {
+      "op": "POP"
+    },
+    "209": {
+      "op": "POP"
+    },
+    "210": {
+      "op": "POP"
+    },
+    "211": {
+      "op": "POP"
+    },
+    "212": {
+      "op": "POP"
+    },
+    "213": {
+      "op": "POP"
+    },
+    "214": {
+      "fn": "PriceFeedConsumer.getLatestPrice",
+      "jump": "o",
+      "offset": [
+        629,
+        904
+      ],
+      "op": "JUMP",
+      "path": "17"
+    },
+    "215": {
+      "op": "JUMPDEST"
+    },
+    "216": {
+      "op": "DUP1"
+    },
+    "217": {
+      "op": "MLOAD"
+    },
+    "218": {
+      "op": "PUSH10",
+      "value": "0xFFFFFFFFFFFFFFFFFFFF"
+    },
+    "229": {
+      "op": "DUP2"
+    },
+    "230": {
+      "op": "AND"
+    },
+    "231": {
+      "op": "DUP2"
+    },
+    "232": {
+      "op": "EQ"
+    },
+    "233": {
+      "op": "PUSH2",
+      "value": "0xF1"
+    },
+    "236": {
+      "op": "JUMPI"
+    },
+    "237": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "239": {
+      "op": "DUP1"
+    },
+    "240": {
+      "op": "REVERT"
+    },
+    "241": {
+      "op": "JUMPDEST"
+    },
+    "242": {
+      "op": "SWAP2"
+    },
+    "243": {
+      "op": "SWAP1"
+    },
+    "244": {
+      "op": "POP"
+    },
+    "245": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "246": {
+      "op": "JUMPDEST"
+    },
+    "247": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "249": {
+      "op": "DUP1"
+    },
+    "250": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "252": {
+      "op": "DUP1"
+    },
+    "253": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "255": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "257": {
+      "op": "DUP7"
+    },
+    "258": {
+      "op": "DUP9"
+    },
+    "259": {
+      "op": "SUB"
+    },
+    "260": {
+      "op": "SLT"
+    },
+    "261": {
+      "op": "ISZERO"
+    },
+    "262": {
+      "op": "PUSH2",
+      "value": "0x10E"
+    },
+    "265": {
+      "op": "JUMPI"
+    },
+    "266": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "268": {
+      "op": "DUP1"
+    },
+    "269": {
+      "op": "REVERT"
+    },
+    "270": {
+      "op": "JUMPDEST"
+    },
+    "271": {
+      "op": "PUSH2",
+      "value": "0x117"
+    },
+    "274": {
+      "op": "DUP7"
+    },
+    "275": {
+      "op": "PUSH2",
+      "value": "0xD7"
+    },
+    "278": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "279": {
+      "op": "JUMPDEST"
+    },
+    "280": {
+      "op": "SWAP5"
+    },
+    "281": {
+      "op": "POP"
+    },
+    "282": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "284": {
+      "op": "DUP7"
+    },
+    "285": {
+      "op": "ADD"
+    },
+    "286": {
+      "op": "MLOAD"
+    },
+    "287": {
+      "op": "SWAP4"
+    },
+    "288": {
+      "op": "POP"
+    },
+    "289": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "291": {
+      "op": "DUP7"
+    },
+    "292": {
+      "op": "ADD"
+    },
+    "293": {
+      "op": "MLOAD"
+    },
+    "294": {
+      "op": "SWAP3"
+    },
+    "295": {
+      "op": "POP"
+    },
+    "296": {
+      "op": "PUSH1",
+      "value": "0x60"
+    },
+    "298": {
+      "op": "DUP7"
+    },
+    "299": {
+      "op": "ADD"
+    },
+    "300": {
+      "op": "MLOAD"
+    },
+    "301": {
+      "op": "SWAP2"
+    },
+    "302": {
+      "op": "POP"
+    },
+    "303": {
+      "op": "PUSH2",
+      "value": "0x13A"
+    },
+    "306": {
+      "op": "PUSH1",
+      "value": "0x80"
+    },
+    "308": {
+      "op": "DUP8"
+    },
+    "309": {
+      "op": "ADD"
+    },
+    "310": {
+      "op": "PUSH2",
+      "value": "0xD7"
+    },
+    "313": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "314": {
+      "op": "JUMPDEST"
+    },
+    "315": {
+      "op": "SWAP1"
+    },
+    "316": {
+      "op": "POP"
+    },
+    "317": {
+      "op": "SWAP3"
+    },
+    "318": {
+      "op": "SWAP6"
+    },
+    "319": {
+      "op": "POP"
+    },
+    "320": {
+      "op": "SWAP3"
+    },
+    "321": {
+      "op": "SWAP6"
+    },
+    "322": {
+      "op": "SWAP1"
+    },
+    "323": {
+      "op": "SWAP4"
+    },
+    "324": {
+      "op": "POP"
+    },
+    "325": {
+      "jump": "o",
+      "op": "JUMP"
+    }
+  },
+  "sha1": "2d7f90ba60a3ff18fc1b7ade9756f00f58141af8",
+  "source": "\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nimport \"@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol\";\n\ncontract PriceFeedConsumer {\n\n    AggregatorV3Interface internal priceFeed;\n\n    /**\n     * Network: Kovan\n     * Aggregator: ETH/USD\n     * Address: 0x9326BFA02ADD2366b30bacB125260Af641031331\n     */\n    /**\n     * Network: Mainnet\n     * Aggregator: ETH/USD\n     * Address: 0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419\n     */\n    constructor(address AggregatorAddress) {\n        priceFeed = AggregatorV3Interface(AggregatorAddress);\n    }\n\n    /**\n     * Returns the latest price\n     */\n    function getLatestPrice() public view returns (int) {\n        (\n            uint80 roundID, \n            int price,\n            uint startedAt,\n            uint timeStamp,\n            uint80 answeredInRound\n        ) = priceFeed.latestRoundData();\n        return price;\n    }\n}\n",
+  "sourceMap": "136:770:17:-:0;;;467:108;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;516:9;:52;;-1:-1:-1;;;;;;516:52:17;-1:-1:-1;;;;;516:52:17;;;;;;;;;;136:770;;14:290:19;84:6;137:2;125:9;116:7;112:23;108:32;105:52;;;153:1;150;143:12;105:52;179:16;;-1:-1:-1;;;;;224:31:19;;214:42;;204:70;;270:1;267;260:12;204:70;293:5;14:290;-1:-1:-1;;;14:290:19:o;:::-;136:770:17;;;;;;",
+  "sourcePath": "contracts/PriceFeedConsumer.sol",
+  "type": "contract"
+}

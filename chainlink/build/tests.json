@@ -1,0 +1,51 @@
+{
+  "contracts": {
+    "APIConsumer": "6dae063bb1da8f6cb12d5f6a6bc2ab59cdef9713",
+    "Counter": "9dca2c77c7ffef2fd70be0e91afddd1f0d3a3d65",
+    "LinkToken": "49e7bae2df618e81d877632c6ad55872ff2ce801",
+    "MockOracle": "7f09d8b642ed1af8d9a3e094ab619f25db4db23c",
+    "MockV3Aggregator": "9e734e161b5cafcca52a917f10266f5a8bc05b28",
+    "PriceFeedConsumer": "4a767194a033a6ce3f88d654cc6ebd727a1e92a3",
+    "VRFConsumer": "79887e70ddc253000e2129f19029377bca7b0f72",
+    "VRFCoordinatorMock": "a234e721cab3c47e532d8404949512e63f344855",
+    "smartcontractkit/chainlink-brownie-contracts@0.2.2/BasicToken": "92084ac5279a2a3db988d9e01d7e6d3e3a4dab8d",
+    "smartcontractkit/chainlink-brownie-contracts@0.2.2/BufferChainlink": "1ce946f6a4eaa185320328620ccf999b9e86db7c",
+    "smartcontractkit/chainlink-brownie-contracts@0.2.2/CBORChainlink": "1ce946f6a4eaa185320328620ccf999b9e86db7c",
+    "smartcontractkit/chainlink-brownie-contracts@0.2.2/Chainlink": "1ce946f6a4eaa185320328620ccf999b9e86db7c",
+    "smartcontractkit/chainlink-brownie-contracts@0.2.2/ChainlinkClient": "750a107dfd09b0702b5ae03a4b6ea3c8b73190e1",
+    "smartcontractkit/chainlink-brownie-contracts@0.2.2/SafeMathChainlink": "bf84f5dba942291289c80f271862cb515ce813ab",
+    "smartcontractkit/chainlink-brownie-contracts@0.2.2/StandardToken": "7f21b0e2f1d1fcf89f4466183c9e73bc3cf77276",
+    "smartcontractkit/chainlink-brownie-contracts@0.2.2/VRFRequestIDBase": "73df0a6f5d0123eb2b2db0faf62b602aa77c123a"
+  },
+  "tests": {
+    "tests/test_api_consumer.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": ".s",
+      "sha1": "8307d5cdeae8fe0107f11dd0026fc99de845e32a",
+      "txhash": []
+    },
+    "tests/test_keeper.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": ".",
+      "sha1": "f21fecf4ffe10cc7e44d58cf7fb14516f058838c",
+      "txhash": []
+    },
+    "tests/test_price_feeds.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": ".",
+      "sha1": "4adbac91718d6c202c81e3aa3d02da5911366823",
+      "txhash": []
+    },
+    "tests/test_vrf.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "..s",
+      "sha1": "d938dc4c0f70183593a2fdb6871da579ecf39ce4",
+      "txhash": []
+    }
+  },
+  "tx": {}
+}

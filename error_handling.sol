@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.5.0;
+pragma solidity ^0.8.4;
 
 contract Vendor {
    address public seller;

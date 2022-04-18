@@ -13,6 +13,4 @@ function set(uint256 x) public{
 function get() view public returns(uint){
    return storenum;
 }
-
-
 }

@@ -1,0 +1,26 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
+
+contract array{
+    
+     uint  favnum;
+   
+    struct people{
+        uint favnums;
+        string lads;
+    }
+
+    people [] public People;
+
+
+    function store(uint _favnum)public {
+        favnum = _favnum;
+    }
+
+    function retreive()public view returns(uint256){
+        return favnum;
+    }
+
+    function addperson(uint _favnums,string memory _lads)public{
+        People.push(people( _favnums, _lads));
+    }

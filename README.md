@@ -1,8 +1,10 @@
 # solidity_basics
 Umm...new into Etherium programming?
 
-here are few very basic programs coded in solidity,tests are in python(brownie), evm used is truffle.
+Here are few very basic programs coded in Solidity.
+ 
+All of them are self-explanatory programs.
 
-u can refer and learn.
-thats all for now..
+You can refer and learn.Thats all for now..
+
 peace;)
